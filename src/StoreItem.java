@@ -33,6 +33,10 @@ public class StoreItem
     public StoreItem (String title, String author, Date dateAcquired, int purchasePrice, int askingPrice)
     {
         setTitle(title);
+        setAuthor(author);
+        setDateAcquired(dateAcquired);
+        setPurchasePrice(purchasePrice);
+        setAskingPrice(askingPrice);
     }
 
     public static int getItemCount() {

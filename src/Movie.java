@@ -17,11 +17,11 @@ import java.util.Date;
 public class Movie extends StoreItem{
     private static int movieCount;
     private String director;
-    private String[] actors[];
-    private String[] actresses[]; 
+    private String[] actors;
+    private String[] actresses; 
 
     public Movie(String title, String author, Date dateAcquired, int purchasePrice, 
-            int askingPrice,String director, String[] actors[], String[] actresses[])
+            int askingPrice,String director, String[] actors, String[] actresses)
     {
         super(title, author, dateAcquired, purchasePrice, askingPrice);
         this.director = director;
@@ -42,19 +42,19 @@ public class Movie extends StoreItem{
         this.director = director;
     }
 
-    public String[][] getActors() {
+    public String[] getActors() {
         return actors;
     }
 
-    public void setActors(String[][] actors) {
+    public void setActors(String[] actors) {
         this.actors = actors;
     }
 
-    public String[][] getActresses() {
+    public String[] getActresses() {
         return actresses;
     }
 
-    public void setActresses(String[][] actresses) {
+    public void setActresses(String[] actresses) {
         this.actresses = actresses;
     }
     
